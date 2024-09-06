@@ -1,0 +1,124 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+  display: grid;
+  grid-template-columns: auto ;
+    
+}
+
+label{
+    color: #ffffff;
+ padding: 5px;
+}
+.cltext{
+    text-align: center;
+    margin-top:0.7rem;
+    font-size: 3rem;
+    color: rgb(163, 255, 14);
+    
+    text-transform: uppercase;
+    text-shadow: 4px 5px 0px rgb(112, 185, 2);
+}
+
+.outerdiv{
+    display: grid;
+    grid-template-columns: auto auto ;
+height: 9rem;
+margin:20px;
+padding: 10px;
+width: 30rem;
+box-shadow: 10px 10px 7px 8px rgb(94, 92, 92);
+background-image: url('https://img.freepik.com/free-photo/rustic-black-wood-textured-background_53876-160557.jpg');
+border-radius: 25px;
+border:0.3rem solid rgb(209, 209, 209);
+
+}
+
+
+
+.inner-div{
+height: 6rem;
+margin: auto;
+width: 13rem;
+background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url('https://png.pngtree.com/thumb_back/fh260/background/20200713/pngtree-premium-3d-indoor-grey-gradient-background-image_353539.jpg');
+border: 0.3rem solid gray;
+border-radius: 25px;
+background-size: cover;
+z-index: 2;
+box-shadow: 2px 2px 0px 2px rgb(94, 92, 92);
+}
+.glass{
+    
+    height: 6rem;
+    position:absolute;
+    margin: 11px;
+z-index: 5;
+width: 13rem;
+background: rgba(78, 73, 73, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(78, 73, 73, 0.3);
+
+
+
+}
+/* .inner-div-2{
+    box-shadow: 4px 4px 0px 2px rgb(94, 92, 92);
+    height: 8rem;
+    margin: auto;
+    margin-left: -0.7rem;
+    width: 8rem;
+    background-color: rgb(88, 88, 88);
+    border: 0.3rem solid grey;
+    border-radius: 25px;
+    } */
+    select {
+        /* Reset Select */
+      height: 30px;
+        outline: 10px rgb(0, 0, 0);
+        border: 0;
+        box-shadow: none;
+        border-radius: 5px;
+        /* Personalize */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        flex: 1;
+        border: 2px solid rgb(131, 131, 131);
+        padding: 0 1em;
+        color: #ffffff;
+        box-shadow: 2px 2px 2px 1px grey;
+        background-color:#313131;
+        background-image: none;
+        cursor: pointer;
+        text-align: center;
+      }
+      /* Remove IE arrow */
+      select::-ms-expand {
+        display: none;
+      }
+      /* Custom Select wrapper */
+      select {
+        position: relative;
+        display: flex;
+        width: 20em;
+        height: 3em;
+        border-radius: .25em;
+        overflow: hidden;
+      }
+      /* Arrow */
+      select::after {
+        position: absolute;
+       
+        padding: 1em;
+        background-color: #34495e;
+        transition: .25s all ease;
+        pointer-events: none;
+      }
+      /* Transition */
+      select:hover::after {
+        color: #f39c12;
+      }
+      

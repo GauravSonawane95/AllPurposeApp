@@ -1,0 +1,57 @@
+<div class="main">
+<div class="outerdiv">
+    <div class="glass">
+    
+    </div>
+    
+<div class="inner-div">
+    <h1 class="cltext">{{localHourMinute}}</h1>
+</div>
+<div class="glass" style="margin-left: 235px;">
+       
+</div>   
+<div class="inner-div">
+    <h1 class="cltext" [innerText]="localSecondsAmPm"></h1>
+</div>
+</div>
+
+
+<!-- World Closckk -->
+<div class="outerdiv" style="height: 18rem;">
+   
+   <div style="position: absolute;">
+    
+    <label for="timeZone">
+        <h3>World Clock</h3>
+        <h6>Select Time Zone</h6></label>
+    <select id="timeZone" (change)="onTimeZoneChange($event)">
+      <option *ngFor="let zone of timeZones" [value]="zone">{{ zone }}</option>
+    </select>
+   </div>
+   
+     <div class="inner-div" style="position:relative;top:70px">
+
+         <h1 class="cltext">{{ worldHourMinute }}</h1>
+     </div>
+ 
+    
+     <div class="inner-div" style="position:relative;top:70px">
+         <h1 class="cltext">{{ worldSecondsAmPm }}</h1>
+     </div>
+     
+     </div>
+
+
+</div>
+
+
+    
+        
+        
+       
+
+
+
+
+
+

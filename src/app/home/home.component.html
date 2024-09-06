@@ -1,0 +1,75 @@
+<!-- Navbar -->
+
+<nav id="navbar">
+  <ul class="navbar-items flexbox-col">
+    <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left nohover">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+              <i class="fa fa-searchh"></i>
+          </div>
+          <span class="link-text"><h3>One Unit</h3>Multi Purpose</span>
+        </a>
+      </li>
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left" routerLink="ai">
+        <div class="navbar-item-inner-icon-wrapper flexbox" >
+            <i class="fa fa-search"></i>
+        </div>
+        <span class="link-text">Search</span>
+      </a>
+    </li>
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left" routerLink="dash">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-home"></i>
+        </div>
+        <span class="link-text">Home</span>
+      </a>
+    </li>
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left" routerLink="weather">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-cloud"></i>
+        </div>
+        <span class="link-text">Weather</span>
+      </a>
+    </li>
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left" routerLink="calculator">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-calculator"></i>
+        </div>
+        <span class="link-text">Calculator</span>
+      </a>
+    </li>
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left" routerLink="calender">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-calendar"></i>
+        </div>
+        <span class="link-text">Calender</span>
+      </a>
+    </li>
+    <li class="navbar-item flexbox-left" routerLink="todo">
+      <a class="navbar-item-inner flexbox-left">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-tasks"></i>
+        </div>
+        <span class="link-text">ToDo List</span>
+      </a>
+    </li>
+    <li class="navbar-item flexbox-left" routerLink="clock">
+      <a class="navbar-item-inner flexbox-left">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+            <i class="fa fa-clock-o"></i>
+        </div>
+        <span class="link-text">Clock</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main -->
+<main id="main" class="flexbox-col">
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,27 @@
+<div class="calculator">
+    <input id="display" class="calculator__output" [(ngModel)]="display" readonly>
+    <div class="calculator__keys">
+      <button (click)="onOperator('+')" class="calculator__key calculator__key--operator">+</button>
+      <button (click)="onOperator('-')" class="calculator__key calculator__key--operator">-</button>
+      <button (click)="onOperator('*')" class="calculator__key calculator__key--operator">&times;</button>
+      <button (click)="onOperator('/')" class="calculator__key calculator__key--operator">÷</button>
+      <button (click)="onDigit('7')" class="calculator__key">7</button>
+      <button (click)="onDigit('8')" class="calculator__key">8</button>
+      <button (click)="onDigit('9')" class="calculator__key">9</button>
+      <button (click)="onDigit('4')" class="calculator__key">4</button>
+      <button (click)="onDigit('5')" class="calculator__key">5</button>
+      <button (click)="onDigit('6')" class="calculator__key">6</button>
+      <button (click)="onDigit('1')" class="calculator__key">1</button>
+      <button (click)="onDigit('2')" class="calculator__key">2</button>
+      <button (click)="onDigit('3')" class="calculator__key">3</button>
+      <button (click)="onDigit('0')" class="calculator__key">0</button>
+      <button (click)="onDot()" class="calculator__key">.</button>
+      <button (click)="onClear()" class="calculator__key">AC</button>
+      <button (click)="onEnter()" class="calculator__key calculator__key--enter">=</button>
+      <button (click)="cursorLeft()" class="calculator__key">←</button>
+      <button (click)="cursorRight()" class="calculator__key">→</button>
+      <button (click)="onBackspace()" class="calculator__key">DEL</button>
+      <button (click)="onReset()" class="calculator__key">C</button>
+    </div>
+  </div>
+  
